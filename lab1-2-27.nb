@@ -1,0 +1,146 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5059,        138]
+NotebookOptionsPosition[      4462,        120]
+NotebookOutlinePosition[      4885,        136]
+CellTagsIndexPosition[      4842,        133]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Minimize", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"0.05", "*", 
+       RowBox[{"(", 
+        RowBox[{"p1", "+", "p2", "+", "p3"}], ")"}]}], "+", 
+      RowBox[{"0.07", "*", 
+       RowBox[{"(", 
+        RowBox[{"p4", "+", "p5", "+", "p6"}], ")"}]}], "+", 
+      RowBox[{"0.13", "*", 
+       RowBox[{"(", 
+        RowBox[{"p7", "+", "p8", "+", "p9", "+", "p10"}], ")"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"p1", "+", "p4", "+", "p7"}], "\[LessEqual]", "3000"}], ",", 
+     " ", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"p2", "+", "p5", "+", "p8"}], " ", "\[LessEqual]", " ", 
+      "2500"}], ",", "\[IndentingNewLine]", " ", 
+     RowBox[{
+      RowBox[{"p3", "+", "p6", "+", "p9", "+", "p10"}], "\[LessEqual]", 
+      "7000"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "p1", "+", "p2", "+", "p3", " ", "+", "p4", "+", "p5", "+", "p6", "+", 
+       "p7", "+", "p8", "+", "p9", "+", "p10"}], " ", "\[GreaterEqual]", " ", 
+      "10000"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p1", " ", "\[LessEqual]", " ", "1100"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p2", " ", "\[LessEqual]", " ", "1100"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p3", " ", "\[LessEqual]", " ", "1100"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p4", " ", "\[LessEqual]", " ", "1500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p5", " ", "\[LessEqual]", " ", "1500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p6", " ", "\[LessEqual]", " ", "1500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p7", " ", "\[LessEqual]", " ", "2500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p8", " ", "\[LessEqual]", " ", "2500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p9", " ", "\[LessEqual]", " ", "2500"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "0", " ", "\[LessEqual]", " ", "p10", " ", "\[LessEqual]", " ", 
+      "2500"}]}], "}"}], ",", " ", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+    "p1", ",", "p2", ",", "p3", ",", "p4", ",", "p5", ",", "p6", ",", "p7", 
+     ",", "p8", ",", "p9", ",", "p10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7332463807532873`*^9, 3.733246769720853*^9}, {
+   3.7332468144136033`*^9, 3.733246817882532*^9}, 3.7332468807025695`*^9, {
+   3.733246947741766*^9, 3.7332469570553555`*^9}, {3.7332470360175962`*^9, 
+   3.733247072068863*^9}},ExpressionUUID->"4a8ab29a-bec9-411f-9269-\
+be272fcea24d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"772.`", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p1", "\[Rule]", "1100.`"}], ",", 
+     RowBox[{"p2", "\[Rule]", "1100.`"}], ",", 
+     RowBox[{"p3", "\[Rule]", "1100.`"}], ",", 
+     RowBox[{"p4", "\[Rule]", "1500.`"}], ",", 
+     RowBox[{"p5", "\[Rule]", "1400.`"}], ",", 
+     RowBox[{"p6", "\[Rule]", "1500.`"}], ",", 
+     RowBox[{"p7", "\[Rule]", "0.`"}], ",", 
+     RowBox[{"p8", "\[Rule]", "0.`"}], ",", 
+     RowBox[{"p9", "\[Rule]", "0.`"}], ",", 
+     RowBox[{"p10", "\[Rule]", "2300.`"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7332467998647575`*^9, {3.7332468728890533`*^9, 3.733246882686987*^9}, {
+   3.7332469590087147`*^9, 3.7332469640559196`*^9}, 3.733247007373582*^9, {
+   3.73324705078489*^9, 
+   3.73324707503797*^9}},ExpressionUUID->"297a1c50-54d4-41a6-b489-\
+f3f3d2e740e3"]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.733246400036798*^9},ExpressionUUID->"09028e18-420f-4f77-b900-\
+4f99917fe3ad"]
+},
+WindowSize->{707, 867},
+WindowMargins->{{Automatic, 591}, {-324, Automatic}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2856, 68, 314, "Input",ExpressionUUID->"4a8ab29a-bec9-411f-9269-be272fcea24d"],
+Cell[3438, 92, 858, 20, 52, "Output",ExpressionUUID->"297a1c50-54d4-41a6-b489-f3f3d2e740e3"]
+}, Open  ]],
+Cell[4311, 115, 147, 3, 48, "Input",ExpressionUUID->"09028e18-420f-4f77-b900-4f99917fe3ad"]
+}
+]
+*)
+

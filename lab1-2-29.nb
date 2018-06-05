@@ -1,0 +1,202 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8768,        194]
+NotebookOptionsPosition[      8263,        177]
+NotebookOutlinePosition[      8684,        193]
+CellTagsIndexPosition[      8641,        190]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Minimize", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"26", "v11"}], "+", 
+      RowBox[{"28", "v12"}], "+", 
+      RowBox[{"20", "v13"}], "+", 
+      RowBox[{"26", "v14"}], "+", 
+      RowBox[{"12", "v21"}], "+", 
+      RowBox[{"14", "v22"}], "+", 
+      RowBox[{"26", "v23"}], "+", 
+      RowBox[{"10", "v24"}], "+", 
+      RowBox[{"10", "v31"}], "+", 
+      RowBox[{"12", "v32"}], "+", 
+      RowBox[{"20", "v33"}], "+", 
+      RowBox[{"4", "v34"}], "+", 
+      RowBox[{"18", "v41"}], "+", 
+      RowBox[{"20", "v42"}], "+", 
+      RowBox[{"2", "v43"}], "+", 
+      RowBox[{"16", "v44"}], "+", 
+      RowBox[{"11", "v51"}], "+", 
+      RowBox[{"16", "v52"}], "+", 
+      RowBox[{"6", "v53"}], "+", 
+      RowBox[{"24", "v54"}], "+", 
+      RowBox[{"8", "v61"}], "+", 
+      RowBox[{"10", "v62"}], "+", 
+      RowBox[{"22", "v63"}], "+", 
+      RowBox[{"14", "v64"}], "+", 
+      RowBox[{"20", "v71"}], "+", 
+      RowBox[{"22", "v72"}], "+", 
+      RowBox[{"18", "v73"}], "+", 
+      RowBox[{"21", "v74"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "v11", "+", "v21", "+", "v31", "+", "v41", "+", "v51", "+", "v61", "+", 
+       "v71"}], " ", "\[LessEqual]", " ", "660"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "v12", "+", "v22", "+", "v32", "+", "v42", "+", "v52", "+", "v62", "+", 
+       "v72"}], " ", "\[LessEqual]", " ", "301"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "v13", "+", "v23", "+", "v33", "+", "v43", "+", "v53", "+", "v63", "+", 
+       "v73"}], " ", "\[LessEqual]", " ", "271"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "v14", "+", "v24", "+", "v34", "+", "v44", "+", "v54", "+", "v64", "+", 
+       "v74"}], " ", "\[LessEqual]", " ", "99"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v11", "+", "v12", "+", "v13", "+", "v14"}], " ", 
+      "\[GreaterEqual]", " ", "247"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v21", "+", "v22", "+", "v23", "+", "v24"}], " ", 
+      "\[GreaterEqual]", " ", "394"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v31", "+", "v32", "+", "v33", "+", "v34"}], " ", 
+      "\[GreaterEqual]", " ", "265"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v41", "+", "v42", "+", "v43", "+", "v44"}], " ", 
+      "\[GreaterEqual]", " ", "105"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v51", "+", "v52", "+", "v53", "+", "v54"}], " ", 
+      "\[GreaterEqual]", " ", "90"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v61", "+", "v62", "+", "v63", "+", "v64"}], " ", 
+      "\[GreaterEqual]", " ", "85"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"v71", "+", "v72", "+", "v73", "+", "v74"}], " ", 
+      "\[GreaterEqual]", " ", "145"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v11", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v12", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v13", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v14", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v21", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v22", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v23", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v24", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v31", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v32", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v33", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v34", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v41", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v42", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v43", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v44", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v51", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v52", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v53", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v54", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v61", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v62", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v63", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v64", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v71", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v72", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v73", "\[GreaterEqual]", " ", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"v74", "\[GreaterEqual]", " ", "0"}]}], "}"}], ",", " ", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+    "v11", ",", "v12", ",", "v13", ",", "v14", ",", "v21", ",", "v22", ",", 
+     "v23", ",", "v24", ",", "v31", ",", "v32", ",", "v33", ",", "v34", ",", 
+     "v41", ",", "v42", ",", "v43", ",", "v44", ",", "v51", ",", "v52", ",", 
+     "v53", ",", "v54", ",", "v61", ",", "v62", ",", "v63", ",", "v64", ",", 
+     "v71", ",", "v72", ",", "v73", ",", "v74"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7332473232219424`*^9, 3.733247368617699*^9}, {
+   3.7332474065281534`*^9, 3.7332477415828094`*^9}, {3.7332478250608234`*^9, 
+   3.733247993563899*^9}, {3.7332480577897787`*^9, 3.7332483152558527`*^9}, {
+   3.7332483475560484`*^9, 3.733248448426883*^9}, {3.7332486017250457`*^9, 
+   3.733248957456647*^9}, {3.7332490706272388`*^9, 3.733249074862131*^9}, {
+   3.733249228068657*^9, 3.7332493136107063`*^9}, {3.7332494276386905`*^9, 
+   3.7332495679980183`*^9}, {3.733249658586524*^9, 3.733249741237096*^9}, 
+   3.7332499562436705`*^9},ExpressionUUID->"a2abaeab-a43d-42be-8b3f-\
+c413008a5251"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"17592", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"v11", "\[Rule]", "81"}], ",", 
+     RowBox[{"v12", "\[Rule]", "0"}], ",", 
+     RowBox[{"v13", "\[Rule]", "166"}], ",", 
+     RowBox[{"v14", "\[Rule]", "0"}], ",", 
+     RowBox[{"v21", "\[Rule]", "93"}], ",", 
+     RowBox[{"v22", "\[Rule]", "301"}], ",", 
+     RowBox[{"v23", "\[Rule]", "0"}], ",", 
+     RowBox[{"v24", "\[Rule]", "0"}], ",", 
+     RowBox[{"v31", "\[Rule]", "166"}], ",", 
+     RowBox[{"v32", "\[Rule]", "0"}], ",", 
+     RowBox[{"v33", "\[Rule]", "0"}], ",", 
+     RowBox[{"v34", "\[Rule]", "99"}], ",", 
+     RowBox[{"v41", "\[Rule]", "0"}], ",", 
+     RowBox[{"v42", "\[Rule]", "0"}], ",", 
+     RowBox[{"v43", "\[Rule]", "105"}], ",", 
+     RowBox[{"v44", "\[Rule]", "0"}], ",", 
+     RowBox[{"v51", "\[Rule]", "90"}], ",", 
+     RowBox[{"v52", "\[Rule]", "0"}], ",", 
+     RowBox[{"v53", "\[Rule]", "0"}], ",", 
+     RowBox[{"v54", "\[Rule]", "0"}], ",", 
+     RowBox[{"v61", "\[Rule]", "85"}], ",", 
+     RowBox[{"v62", "\[Rule]", "0"}], ",", 
+     RowBox[{"v63", "\[Rule]", "0"}], ",", 
+     RowBox[{"v64", "\[Rule]", "0"}], ",", 
+     RowBox[{"v71", "\[Rule]", "145"}], ",", 
+     RowBox[{"v72", "\[Rule]", "0"}], ",", 
+     RowBox[{"v73", "\[Rule]", "0"}], ",", 
+     RowBox[{"v74", "\[Rule]", "0"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7332493461296463`*^9, 3.733249786382787*^9, 
+  3.7332499573844123`*^9},ExpressionUUID->"012199b0-a86d-4f84-8009-\
+49977bcaa15d"]
+}, Open  ]]
+},
+WindowSize->{707, 874},
+WindowMargins->{{Automatic, 329}, {25, Automatic}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 6162, 115, 865, "Input",ExpressionUUID->"a2abaeab-a43d-42be-8b3f-c413008a5251"],
+Cell[6744, 139, 1503, 35, 90, "Output",ExpressionUUID->"012199b0-a86d-4f84-8009-49977bcaa15d"]
+}, Open  ]]
+}
+]
+*)
+
